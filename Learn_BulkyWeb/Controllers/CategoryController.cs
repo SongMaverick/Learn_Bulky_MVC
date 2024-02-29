@@ -17,5 +17,9 @@ namespace Learn_BulkyWeb.Controllers {
             List<Category> categoryList = _db.Category.ToList();
             return View(categoryList);
         }
+
+        public IActionResult Create() {
+            return View();
+        }
     }
 }
